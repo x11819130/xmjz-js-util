@@ -1,7 +1,7 @@
 const path = require('path')
 module.exports = {
-    // 模式
-    mode: 'none', // 也可以使用 production
+    // 模式 none,developlent,production
+    mode: 'none',
     // 入口
     entry: './src/index.js',
     // 出口
@@ -12,7 +12,7 @@ module.exports = {
         filename: 'xmjz-util.js',
         // 向外暴露的对象的名称
         library: 'xutil',
-        // 打包生成库可以通过esm/commonjs/reqirejs的语法引入
+        // 打包生成库可以通过esm/commonjs/reqirejs的语法引入 可选:var,this,commonjs,commonjs2,amd,umd
         libraryTarget: 'umd',
-    },
+    }
 }
